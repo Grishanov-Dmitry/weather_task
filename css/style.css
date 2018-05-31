@@ -1,0 +1,100 @@
+body {
+    background: url(../image/bg_weather_task.jpg) no-repeat;
+    background-size: cover;
+}
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+
+}
+
+.wrapper h2, .wrapper h3 {
+    font-size: 35px;
+}
+
+.wrapper {
+    width: 100%;
+    font-size: 25px;
+}
+
+.wrapper ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.city_name__desktop_version {
+    display: none;
+}
+
+.display_block__center__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.future_weather li{
+    color: #fff;
+}
+
+.today_info {
+    width: 100%;
+
+}
+
+.weather_today__icon {
+    width: 100px;
+    height: 100px;
+}
+
+.weather_today__icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.current_date {
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 490px) {
+    .city_name__desktop_version {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .city_name__mobile_version {
+        display: none;
+    }
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px 0 0 10%;
+        box-sizing: border-box;
+    }
+
+    .today_info {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .today__icon_deg {
+        width: 30%;
+    }
+
+    .values_of_weather {
+        width: 70%;
+    }
+    .future_weather {
+        width: 100%;
+    }
+    .future_weather ul {
+        align-items: flex-start;
+    }
+}
+
+.display_none {
+    display: none;
+}

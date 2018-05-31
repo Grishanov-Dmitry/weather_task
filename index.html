@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather_task</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div class="preloader display_block__center__column" id="preloader" >Подождите, идет загрузка! <img src="./image/preloader.gif" alt=""></div>
+    <div class="wrapper display_block__center__column">
+
+        <div class="today_info display_block__center__column">
+
+            <div class="today__icon_deg display_block__center__column">
+                <h2 class="city_name__mobile_version">Минск</h2>
+                <div class="weather_today__icon" ><img src="" alt="weather icon" id="weather_today__icon"></div>
+                <div class="curent_temperature" id="curent_temperature"></div>
+                <h2 class="city_name__desktop_version" id="user_city">Минск</h2>
+            </div>
+
+
+            <div class="values_of_weather">
+                <div class="current_date" id="current_date">Сегодня</div>
+                <ul class="display_block__center__column" id="data_for_today">
+                    <li>Ветер: значение</li>
+                    <li>Направление ветра: значение</li>
+                    <li>Влажность: значение</li>
+                    <li>Видимость: значение</li>
+                    <li>Минимальная T&deg;</li>
+                    <li>Максимальная T&deg;</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="future_weather">
+            <h3>Погода на 2 дня</h3>
+            <ul class="display_block__center__column future_weather">
+                <li>Завтра: 25&deg;, </li>
+                <li>Послезавтра: 26&deg;</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
